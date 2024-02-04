@@ -64,7 +64,7 @@ def multiply_matrices(matrix1,matrix2):
 
 #Multiplies the matrix with itself, power times to get A^m.
 def find_matrix_power(matrix,power_value):
-    original_matrix=matrix.copy()
+    original_matrix=matrix.copy() #Stores the original matrix to multiply in later iterations.
     for i in range(power_value-1):
         matrix=multiply_matrices(matrix,original_matrix)
     return matrix
